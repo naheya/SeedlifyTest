@@ -91,7 +91,8 @@ body{
 }
 
 .arrow-up {
-  margin-left: 70px;
+	display: none;
+  margin-left: 110px;
   width: 0; 
   height: 0; 
   border-left: 5px solid transparent;
@@ -140,4 +141,18 @@ body{
 }
 .warranty{
 	font-size: 16px;
+}
+
+@media screen and (max-width: 797px){
+	.navbar-nav{
+		float: none;
+		display: inline-flex;
+	}
+}
+
+@media screen and (max-width: 1122px){
+	.button-group .sliderButton{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 }

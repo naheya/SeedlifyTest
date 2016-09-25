@@ -34,7 +34,7 @@
 
 	<div class="slideshow">
 		<div class="slider-wrapper">
-			<div class="mySlides">
+			<div class="mySlides slide1">
 				<div class="contentLeft">
 				  <img src="images/2.jpg" alt="Image2">
 				</div>
@@ -46,7 +46,7 @@
 					<p><a href="#">View details></a></p>
 				</div>
 			</div>
-			<div class="mySlides">
+			<div class="mySlides slide2">
 				<div class="contentLeft">
 				  <img src="images/3.jpg" alt="Image2">
 				</div>
@@ -58,7 +58,7 @@
 					<p><a href="#">View details ></a></p>
 				</div>
 			</div>
-			<div class="mySlides">
+			<div class="mySlides slide3">
 				<div class="contentLeft">
 				  <img src="images/2.jpg" alt="Image3">
 				</div>
@@ -70,7 +70,7 @@
 					<p><a href="#">View details></a></p>
 				</div>
 			</div>
-			<div class="mySlides">
+			<div class="mySlides slide4">
 				<div class="contentLeft">
 				  <img src="images/3.jpg" alt="Image3">
 				</div>
@@ -83,13 +83,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="button-group clearfix" role="group" aria-label="...">
+		<div class="button-group clearfix">
 			<div class="child">
 			  <div class="arrow-up"></div>
-			  <button type="button" class="sliderButton">1</button>
-			  <button type="button" class="sliderButton">2</button>
-			  <button type="button" class="sliderButton">3</button>
-			  <button type="button" class="sliderButton">4</button>
+			  <button type="button" id="1" class="sliderButton slide1" onclick="currentSlide(this.id);" onmouseover="currentSlide(this.id);" onmouseout="mouseOut();" >1</button>
+			  <button type="button" id="2" class="sliderButton slide2" onclick="currentSlide(this.id); " onmouseover="currentSlide(this.id);" onmouseout="mouseOut();">2</button>
+			  <button type="button" id="3" class="sliderButton slide3" onclick="currentSlide(this.id);" onmouseover="currentSlide(this.id);" onmouseout="mouseOut();">3</button>
+			  <button type="button" id="4" class="sliderButton slide4" onclick="currentSlide(this.id);" onmouseover="currentSlide(this.id);" onmouseout="mouseOut();">4</button>
 			</div>
 		</div>
 	</div>
