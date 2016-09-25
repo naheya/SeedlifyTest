@@ -6,33 +6,138 @@ body{
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
+	background-color: #E2E2E2;
 }
-
-.content{
-	flex:1;
+/*----------------Nav-----------------*/
+.logo{
+	width: 100%;
+	height: 100%;
 }
-
+.myNav{
+	height: 80px;
+	padding: 0;
+}
+.navbar-nav{
+	margin: 15px 0;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #000;
+	font-size: 16px;
+}
+.navbar{
+	margin-bottom: 0;
+}
+/*----------------Slider-----------------*/
+.mySlides{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
 .contentLeft{
 	display: inline-block;
 	vertical-align: top;
-	width: 59%;
+	width: 60%;
 	height: 100%;
 }
-
 .contentRight{
+	position: absolute;
 	display: inline-block;
 	vertical-align: top;
 	width: 40%;
 	height: 100%;
+	color: #fff;
+	background-color: #CB012A;
+	float: right;
+	padding: 20px 40px;
+	font-size: 16px;
 }
-
+.contentRight p a{
+	color: #fff;
+}
 .contentLeft img{
-	width: 80%;
-	height: auto;
+	width: 100%;
+	height: 80%;
 }
 
 .sliderButton{
 	cursor: pointer;
 	font-size: 50px;
 	padding: 12px 60px;
+}
+.button-group{
+	margin-top: -20px;
+	float: right;
+	position: relative;
+	left: -50%;
+	text-align: left;
+}
+
+.child{
+	position: relative;
+	left: 50%;
+}
+
+.button-group .sliderButton{
+	display: block;
+	float: left;
+	/*border: solid 3px #6A6A6A;*/
+	border-radius: 0;
+	margin-left: -2px;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+.button-group .active{
+	border: solid 3px #6A6A6A;
+}
+
+.arrow-up {
+  margin-left: 70px;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent; 
+  border-bottom: 5px solid #6A6A6A;
+}
+/*----------------Content-----------------*/
+.content{
+	flex:1;
+	padding: 40px 20px;
+	margin-bottom: 120px;
+}
+
+.content h1{
+	margin-top: 0;
+}
+
+.content p{
+	font-size: 18px;
+}
+.contentImage{
+	width: 100%;
+	height: auto;
+}
+.viewRangeBtn{
+	background-color: #EA0F2F;
+	padding: 10px 20px;
+	border: solid 1px #CB012A;
+	color: #fff;
+}
+/*----------------Footer-----------------*/
+.footer{
+	background-color: #fff;
+	margin: 0 5px;
+	padding: 30px 15px;
+}
+.footer ul{
+	padding: 0;
+}
+.footer ul li{
+	list-style: none;
+}
+.footer ul li a{
+	font-weight: bold;
+	color: #000;
+}
+.warranty{
+	font-size: 16px;
 }
